@@ -1,7 +1,3 @@
-Berikut adalah contoh isi dari file `README.md` untuk source code portfolio web yang telah diberikan:
-
----
-
 # Web Portofolio - Rizkha Tegar Pambudi
 
 Proyek ini adalah sebuah website portofolio pribadi yang bertujuan untuk menampilkan informasi tentang pemilik situs, termasuk pengalaman, keterampilan, minat dalam bidang teknologi, serta informasi kontak. Desain dan struktur website dioptimalkan untuk pengguna yang ingin menampilkan profil pribadi secara profesional, terutama dalam bidang pengembangan web dan teknologi.
