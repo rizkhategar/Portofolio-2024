@@ -427,46 +427,83 @@ section {
     background-color: rgb(209, 207, 207);
 }
 
-.contact-form div {
-    margin-bottom: 1.4rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 0.75rem 1.3rem;
+/* Styling dasar untuk form */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #F9F9F9; /* Soft White */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     font-family: "Roboto", sans-serif;
-    background: white;
-    border: 1px solid gainsboro;
-    border-radius: 3px;
-    resize: none;
 }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-    color: black;
+/* Styling untuk label */
+form label {
+    display: block;
+    font-weight: bold;
+    color: #4A4A4A; /* Grayish Blue */
+    margin-bottom: 8px;
+    font-size: 1rem;
 }
 
-.contact-form input::focus,
-.contact-form textarea::focus {
-    outline: none;
-    border: 1px solid gray;
-}
-
-.btn-submit {
+/* Styling untuk input dan textarea */
+form input[type="email"],
+form textarea {
     width: 100%;
-    padding: 0.75rem 1.3rem;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
+    padding: 12px;
+    margin-bottom: 16px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #4A4A4A; /* Grayish Blue */
+    background-color: #FFFFFF; /* White */
+    border: 1px solid #C4C4C4; /* Light Gray */
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-.btn-submit:hover {
-    background-color: rgb(209, 207, 207);
-    color: black;
+/* Fokus pada input dan textarea */
+form input[type="email"]:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #4A90E2; /* Soft Blue */
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+
+/* Styling untuk tombol submit */
+form button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFFFFF; /* White */
+    background-color: #50E3C2; /* Light Turquoise */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #4A90E2; /* Soft Blue */
+}
+
+form button[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+/* Menambahkan jarak antar form element */
+form label,
+form input,
+form textarea,
+form button {
+    margin-bottom: 1rem;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    form {
+        padding: 1.5rem;
+    }
 }
 
 /* End of Contact */
@@ -548,28 +585,13 @@ footer p {
     color: #333; /* Warna teks hak cipta */
 }
 
-/* Animasi masuk dari kiri dengan efek zoom */
-.fade-in-left {
+.fade-in {
     opacity: 0;
-    transform: translateX(-50px) scale(0.9);
-    transition: opacity 3s ease-out, transform 3s ease-out;
-}
-
-.fade-in-left.visible {
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+  }
+  
+  .fade-in-visible {
     opacity: 1;
-    transform: translateX(0) scale(1);
-}
-
-/* Animasi masuk dari kanan dengan efek zoom */
-.fade-in-right {
-    opacity: 0;
-    transform: translateX(50px) scale(0.9);
-    transition: opacity 3s ease-out, transform 3s ease-out;
-}
-
-.fade-in-right.visible {
-    opacity: 1;
-    transform: translateX(0) scale(1);
-}
-
-
+    transform: translateY(0);
+  }
