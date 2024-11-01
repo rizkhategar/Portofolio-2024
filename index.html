@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Portofolio</title>
+  <title>Web Portofolio Sederhana</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -51,10 +51,10 @@
   <!-- End of Header -->
 
   <!-- About -->
-  <section id="about" class="fade-in-left">
+  <section id="about">
     <div class="main-container">
-      <h1 class="section-title-about">About</h1>
-      <p style="text-align: center;">
+      <h1 class="section-title-about fade-in">About</h1>
+      <p class="fade-in" style="text-align: center;">
         I am a student of Informatics Engineering study program at Ngudi Waluyo University class of 2022. I have a great
         interest in Front-End development and have a high learning spirit to master Fullstack skills. In this field, I
         am interested in exploring various aspects of technology, including cyber security, artificial intelligence, and
@@ -111,11 +111,11 @@
   <!-- End About -->
 
   <!-- Skills & Experience -->
-  <section id="skills" class="fade-in-right">
+  <section id="skills">
     <div class="skill main-container">
-      <h1 class="section-title-skills"> Experience & Skills</h1>
+      <h1 class="section-title-skills fade-in"> Experience & Skills</h1>
       <div class="skills-grid">
-        <div class="skills-left">
+        <div class="skills-left fade-in">
           <!-- Experience 1 -->
           <div class="experience">
             <div class="line">
@@ -132,8 +132,8 @@
           </div>
 
           <!-- Experience 2 -->
-          <div class="experience">
-            <div class="line">
+          <div class="experience fade-in">
+            <div class="line fade-in">
               <div></div>
             </div>
 
@@ -157,7 +157,7 @@
             </div>
           </div>
         </div>
-        <div class="skills-right">
+        <div class="skills-right fade-in">
           <p>In my academic and professional journey in Informatics Engineering, I have developed a wide range of
             relevant skills to face challenges in the world of technology.
             My experience includes projects involving web application development, where I applied my knowledge in HTML,
@@ -196,37 +196,34 @@
   <!-- End of Experience & Skills -->
 
   <!-- Contact -->
-  <section id="contact" class="fade-in-left">
+  <section id="contact">
     <div class="contact main-container">
       <div style="text-align: center;">
-        <h1>Contact</h1>
+        <h1 class="fade-in">Contact</h1>
         <br>
-        <p>If you are interested in discussing, collaborating, or have any questions about the projects I work on, feel
+        <p class="fade-in">If you are interested in discussing, collaborating, or have any questions about the projects I work on, feel
           free to contact me. I'm always open to new opportunities, innovative ideas, and feedback that can help develop
           my skills in the tech world. You can fill out the contact form below, and I will endeavor to respond as
           quickly as possible. Let's connect and share inspiration!</p>
         <br>
       </div>
 
+      <form class="fade-in"
+  action="https://formspree.io/f/mqakpbda"
+  method="POST"
+  id="contactForm"
+>
+  <label>
+    Your email:
+    <input type="email" name="email" required>
+  </label>
+  <label>
+    Your message:
+    <textarea name="message" required></textarea>
+  </label>
+  <button type="submit">Send</button>
+</form>
 
-      <form class="contact-form" id="contactForm">
-        <div>
-          <input type="text" name="name" id="name" placeholder="Name" required>
-        </div>
-
-        <div>
-          <input type="email" name="email" id="email" placeholder="Email" required>
-        </div>
-
-        <div>
-          <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
-        </div>
-
-
-        <div>
-          <button class="btn-submit" id="submitButton">Send Message</button>
-        </div>
-      </form>
 
   </section>
   <!-- End of Contact -->
